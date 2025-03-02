@@ -4,6 +4,8 @@ const blockContainer = document.querySelector(".block-container");
 let grid = 0;
 let containerHeight = 0;
 let containerWidth = 0;
+let blockHeight = 0;
+let blockWidth = 0;
 
 createBtn.addEventListener("click", () => {
 
@@ -18,10 +20,10 @@ createBtn.addEventListener("click", () => {
 
 function createGrid() {
 
-  grid = +prompt("What Size Grid Do You Want? (Max 100)", 25);
+  grid = +prompt("What Size Grid Do You Want? (Max 40)", 25);
 
-  while (grid <= 0 || grid > 100) {
-    grid = +prompt("Your Grid Needs to be Between 0 and 101");
+  while (grid <= 0 || grid > 40) {
+    grid = +prompt("Your Grid Needs to be Between 0 and 41");
   }
 
   containerWidth = grid * 10 + 2;
@@ -35,16 +37,16 @@ function createGrid() {
       blocks.classList.add("hover");
       });
       blocks.setAttribute(`style`, `
-      height: 10px;
-      width: 10px;
+      height: ${500 / grid}px;
+      width: ${500 / grid}px;
       border: 1px solid white;
       `);
     };
   };
   blockContainer.setAttribute(`style`, `
   border: 1px solid red;
-  height: ${containerHeight}px;
-  width: ${containerWidth}px;
+  height: ${(500 / grid) * grid + 2}px;
+  width: ${(500 / grid) * grid + 2}px;
   margin-inline: auto;
   display: flex;
   flex-wrap: wrap;
