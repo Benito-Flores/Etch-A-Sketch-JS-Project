@@ -1,4 +1,31 @@
 * {
   background-color: black;
   color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.create-btn {
+  display: block;
+  margin-block: 50px;
+  font-size: 25px;
+  padding: 15px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-inline: auto;
+  transition: .25s;
+}
+
+.create-btn:hover {
+  cursor: pointer;
+  opacity: .85;
+}
+
+.create-btn:active {
+  opacity: .60;
+}
+
+.hover {
+  background-color: blue;
 }
