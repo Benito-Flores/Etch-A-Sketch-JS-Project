@@ -34,7 +34,34 @@ function createGrid() {
       blockContainer.appendChild(blocks);
       blocks.classList.add("blocks");
       blocks.addEventListener("mouseover", () => {
-      blocks.classList.add("hover");
+        let randNum = Math.ceil(Math.random() * 10);
+        
+
+        function randomColor(num) {
+          if (num === 1) {
+            return "pink";
+          } else if (num === 2) {
+            return "blue";
+          } else if (num === 3) {
+            return "purple";
+          } else if (num === 4) {
+            return "cyan";
+          } else if (num === 5) {
+            return "green";
+          } else if (num === 6) {
+            return "white";
+          } else if (num === 7) {
+            return "yellow";
+          } else if (num === 8) {
+            return "red";
+          } else if (num === 9) {
+            return "orange";
+          } else {
+            return "brown";
+          };
+        };
+
+        blocks.classList.add(`${randomColor(randNum)}`);
       });
       blocks.setAttribute(`style`, `
       height: ${500 / grid}px;
