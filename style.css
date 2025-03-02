@@ -26,34 +26,6 @@
   opacity: .60;
 }
 
-.pink {
-  background-color: pink;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.purple {
-  background-color: purple;
-}
-
-.cyan {
-  background-color: cyan;
-}
-
-.green {
-  background-color: green;
-}
-
-.white {
-  background-color: white;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
 .red {
   background-color: red;
 }
@@ -62,6 +34,23 @@
   background-color: orange;
 }
 
-.brown {
-  background-color: brown;
+.yellow {
+  background-color: yellow;
 }
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.indigo {
+  background-color: indigo;
+}
+
+.violet {
+  background-color: violet;
+}
+
