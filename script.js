@@ -25,7 +25,7 @@ function createGrid() {
   grid = +prompt("What Size Grid Do You Want? (Max 40)", 25);
 
   // Will only accept values between 0 and 41
-  while (grid <= 0 || grid > 40) {
+  while (isNaN(grid) || grid <= 0 || grid > 40) {
     grid = +prompt("Your Grid Needs to be Between 0 and 41");
   }
 
